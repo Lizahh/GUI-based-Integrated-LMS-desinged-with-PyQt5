@@ -69,11 +69,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             'id': int(ui.id_spinbox.text()),
             'name': ui.name_input.text(),
             'description': ui.description_input.text(),
-            'isbn': ui.description_input_2.text(),
+            'isbn': ui.lineEdit_3.text(),
             'page_count': int(ui.page_count_spinbox.text()),
             'issued': ui.yes.isChecked(),
             'author': ui.author_input.text(),
-            'year': int(ui.page_count_spinbox_2.text())
+            'year': int(ui.year_spinbox.text())
         }
         lib.update_book(book)
 
@@ -87,13 +87,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             dialog.ui.id_spinbox.setValue(int(book.id))
             dialog.ui.name_input.setText(book.name)
             dialog.ui.description_input.setText(book.description)
-            dialog.ui.description_input_2.setText(book.isbn)
+            dialog.ui.lineEdit_3.setText(book.isbn)
             dialog.ui.page_count_spinbox.setValue(int(book.page_count))
             dialog.ui.yes.setChecked(book.issued)
             if book.issued == False:
                 dialog.ui.yes_2.setChecked(True)
             dialog.ui.author_input.setText(book.isbn)
-            dialog.ui.page_count_spinbox_2.setValue(int(book.year))
+            dialog.ui.year_spinbox.setValue(int(book.year))
 
             dialog.ui.buttonBox.accepted.connect(
                 lambda: self.save_existing_book(dialog.ui))
