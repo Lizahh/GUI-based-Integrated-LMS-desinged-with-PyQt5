@@ -1,0 +1,52 @@
+[
+    {
+        "id": 11,
+        "name": "Deep Learning",
+        "description": "deep learnign book",
+        "isbn": "2130523-25-3-",
+        "page_count": 621,
+        "issued": false,
+        "author": "Ian Goodfellow",
+        "year": 2016
+    },
+    {
+        "id": 21,
+        "name": "The Quirky",
+        "description": "Story about innovators",
+        "isbn": "214-2345-345",
+        "page_count": 1234,
+        "issued": true,
+        "author": "Schilling",
+        "year": 2018
+    },
+    {
+        "id": 24,
+        "name": "A Place Called Home",
+        "description": "About home",
+        "isbn": "645-2345-245",
+        "page_count": 300,
+        "issued": true,
+        "author": "Pretty",
+        "year": 2022
+    },
+    {
+        "id": 25,
+        "name": "A TIME TO KILL",
+        "description": "time pass story",
+        "isbn": "563-32566-234",
+        "page_count": 310,
+        "issued": false,
+        "author": "John Grisham",
+        "year": 2018
+    },
+    {
+        "id": 26,
+        "author": "JOHN STEINBECK",
+        "description": "About east",
+        "isbn": "3456-45355-345",
+        "issued": true,
+        "name": " EAST OF EDEN",
+        "page_count": 100,
+        "year": 2013
+    }
+]
